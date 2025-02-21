@@ -1,0 +1,41 @@
+#=========================================================================
+# sec08-regincr
+#=========================================================================
+
+#-------------------------------------------------------------------------
+# steps
+#-------------------------------------------------------------------------
+
+steps:
+ - 01-synopsys-vcs-rtlsim
+ - 02-synopsys-dc-synth
+ - 03-synopsys-vcs-ffglsim
+ - 04-cadence-innovus-pnr
+ - 05-synopsys-vcs-baglsim
+ - 06-synopsys-pt-pwr
+ - 07-summarize-results
+
+#-------------------------------------------------------------------------
+# variables
+#-------------------------------------------------------------------------
+
+design_name  : RegIncrNstage__p_nstages_4
+clock_period : 1.0
+
+#-------------------------------------------------------------------------
+# test harnesses
+#-------------------------------------------------------------------------
+
+tests:
+ - RegIncrNstage__p_nstages_4_test_4stage_large
+ - RegIncrNstage__p_nstages_4_test_4stage_overflow
+ - RegIncrNstage__p_nstages_4_test_4stage_random
+ - RegIncrNstage__p_nstages_4_test_4stage_small
+
+#-------------------------------------------------------------------------
+# evaluation harnesses
+#-------------------------------------------------------------------------
+
+evals:
+ - RegIncrNstage__p_nstages_4_regincr-sim-basic
+
