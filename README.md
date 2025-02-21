@@ -1,5 +1,5 @@
 
-ECE 6745 Section 2: ASIC Automated Flow
+ECE 6745 Section 3: ASIC Automated Flow
 ==========================================================================
 
 This repository contains source code for ECE 6745 Section 3. The
