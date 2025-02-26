@@ -47,7 +47,7 @@ set_dont_use {
 # Inputs
 #-------------------------------------------------------------------------
 
-analyze -format sverilog $env(TOPDIR)/sim/build/{{design_name}}__pickled.v
+analyze -format sverilog {{src_dir}}/{{design_name}}__pickled.v
 elaborate {{design_name}}
 
 #-------------------------------------------------------------------------
