@@ -1,6 +1,14 @@
 #=========================================================================
-# sec08-regincr
+# sec03-regincr
 #=========================================================================
+# These are the steps required to generate the Verilog and
+# corresponding Verilog test benches.
+#
+#  % mkdir -p $TOPIDR/sim/build
+#  % cd $TOPIDR/sim/build
+#  % pytest ../tut3_verilog/regincr  --test-verilog --dump-vtb
+#  % ../tut3_verilog/regincr/regincr-sim 0xff 0x20 0x30 0x04 0x00
+#
 
 #-------------------------------------------------------------------------
 # steps
